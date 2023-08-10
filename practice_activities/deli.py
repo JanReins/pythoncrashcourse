@@ -5,12 +5,12 @@ finished_sandwiches = []
 
 print("The Deli has run out of pastrami\n")
 
-for pastrami in sandwich_orders:
+while 'pastrami' in sandwich_orders:
     sandwich_orders.remove("pastrami")
 
-for sandwich in sandwich_orders:
+while sandwich_orders:
+    sandwich = sandwich_orders.pop(0)
     print(f"I made you a {sandwich} bb")
-    sandwich_orders.remove(sandwich)
     finished_sandwiches.append(sandwich)
 
 print("\nThese are all the sandwich made: \n")
