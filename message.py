@@ -1,6 +1,16 @@
-def show_message(text_messages):
-    for text in text_messages:
-        print(text)
+def messages(text_messages, sent_messages):
+    while text_messages:
+        sending_message = text_messages.pop()
+        print(f"Sending text message: {sent_message}")
+
+        sent_messages.append(sending_message)
+def show_message(sent_messages):
+    for message in sent_messages:
+        print(message)
+
+
+
+
 
 text_messages = [
     "Hey, how's it going?",
@@ -15,4 +25,7 @@ text_messages = [
     "Can't make it, sorry.",
 ]
 
+sent_message = []
+
+messages(text_messages, sent_message)
 show_message(text_messages)
