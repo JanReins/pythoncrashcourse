@@ -1,13 +1,8 @@
-def messages(text_messages, sent_messages):
+def send_messages(text_messages, sent_messages):
     while text_messages:
         sending_message = text_messages.pop()
-        print(f"Sending text message: {sent_message}")
-
+        print(f"Sending text message: {sending_message}")
         sent_messages.append(sending_message)
-def show_message(sent_messages):
-    for message in sent_messages:
-        print(message)
-
 
 
 
@@ -27,5 +22,7 @@ text_messages = [
 
 sent_message = []
 
-messages(text_messages, sent_message)
-show_message(text_messages)
+send_messages(text_messages, sent_message)
+
+print(text_messages)
+#print("\n", sent_message)
