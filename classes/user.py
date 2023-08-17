@@ -18,7 +18,7 @@ class User:
         self.login_attempts += attempts
         print(f"login attemp number {self.login_attempts}\n")
 
-    def reset_login_attempts(self, reset_login=1):
+    def reset_login_attempts(self, reset_login=0):
         if self.login_attempts > 3:
             self.login_attempts = 0
             print("Login attempts reset.\n")
