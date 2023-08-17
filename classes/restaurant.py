@@ -1,11 +1,11 @@
 class Restaurant:
     def __init__(self, restaurant_name, cuisin_type):
-        self.restuarant_name = restaurant_name
+        self.restaurant_name = restaurant_name
         self.cuisin_type = cuisin_type
     
 
     def describe_restaurant(self):
-        print(f"The {self.restaurant_name} is a {cuisin_type} 5 star restuarant")
+        print(f"The {self.restaurant_name} is a {self.cuisin_type} 5 star restuarant")
 
     def open_restaurant(self):
         print(f'{self.restaurant_name} is open from 1pm to 12 am')
