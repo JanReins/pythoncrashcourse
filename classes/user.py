@@ -10,7 +10,7 @@ class User:
 
         
     def greet_user(self):
-        print(f"Greetings {self.firstname}, son of {self.lastname}, {self.gender} and {self.age} years of age")
+        print(f"Greetings {self.firstname}, son of {self.lastname}, {self.gender} and {self.age} years of age,\n")
 
 user1 = User('Jan', 'Rein', 24, 'Male')
 user2 = User('Airah', 'Meneses', 25, 'Female')
