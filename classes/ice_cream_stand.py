@@ -28,6 +28,6 @@ class IceCreamStand(Restaurant):
         self.flavors = ['vanilla', 'chocolate', 'strawberry', 'cookies and cream', 'avocado']
 
     def show_flavors(self):
-        print(f"Available Ice Cream flavors: \n {self.flavors = ['vanilla', 'chocolate', 'strawberry', 'cookies and cream', 'avocado']}")
+        print(f"Available Ice Cream flavors: \n {self.flavors}")
 
-    
+self.show_flavors()
