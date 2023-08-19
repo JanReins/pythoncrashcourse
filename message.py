@@ -25,4 +25,4 @@ sent_message = []
 send_messages(text_messages, sent_message)
 
 print(text_messages)
-#print("\n", sent_message)
+print("\n", sent_message)
