@@ -27,4 +27,4 @@ cebu_restaurant_1 = Restaurant("Rico's Lechon", "Roasted suckling pig")
 cebu_restaurant_1.describe_restaurant()
 
 cebu_restaurant_1.set_number_served(20)
-cebu_restaurant_1.increment_number_served(100)
+cebu_restaurant_1.increment_number_served(100)s
