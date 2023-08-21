@@ -1,5 +1,7 @@
-name = input("What's your name? ")
+names = []
+with open("names.txt") as file:
+    for line in file:
+        names.append(line.rstrip())
 
-file = open("names.txt", "a")
-file.write(name)
-file.close
+for name in sorted(names):
+    print(f"hello, name {name}")
