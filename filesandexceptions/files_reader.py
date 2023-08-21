@@ -1,7 +1,7 @@
 names = []
-for _ in range(3):
-    names.append(input("What's your name? "))
+with open("names.txt") as file:
+    for line in file:
+        names.append(line.rstrip())
 
 for name in sorted(names):
-    print(f"hello, {name}")
-
+    print(f"hello, name {name}")
