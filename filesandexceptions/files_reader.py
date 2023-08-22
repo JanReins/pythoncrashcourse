@@ -1,7 +1,11 @@
-names = []
-with open("names.txt") as file:
-    for line in file:
-        names.append(line.rstrip())
+from pathlib import Path
 
-for name in sorted(names):
-    print(f"hello, name {name}")
+path = Path("alice.txt")
+try:
+    contents = path.read_text(encoding='utf-8')
+except FileNotFoundError:
+    print(f"Sorry, the file {path} does not exist.")
+else:
+    words = contents.split()
+    num_words = len(words)
+    print(f"The file {path} has about {num_words} words.")
