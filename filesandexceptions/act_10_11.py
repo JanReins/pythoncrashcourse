@@ -4,6 +4,6 @@ import json
 
 number = input("What's your favorit number? ")
 
-path = Path('fave_number.json')
+path = Path(3)
 numbers = json.dumps({'number': number})
 path.write_text(numbers)

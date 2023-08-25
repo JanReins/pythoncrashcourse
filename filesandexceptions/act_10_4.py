@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 
+
 name = input("Please enter your name: ")
 guest_list = Path("guest.json")
 
